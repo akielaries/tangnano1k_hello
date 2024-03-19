@@ -4,3 +4,6 @@ synthesize:
 	gowin_pack -d GW1NZ-1 -o pack.fs pnrblinky.json
 flash:
 	openFPGALoader -v -b tangnano1k pack.fs
+
+clean:
+	rm -f *.fs *.json
